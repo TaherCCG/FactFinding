@@ -167,9 +167,9 @@ directory (CWD)</em></br>
 </ul>
 </Ul>
 <Ul>
-<li><em>To learn more about operators and precedence order refer to [Python Documentation](https://www.w3schools.com/python/python_operators.asp"w3schools.com")</em></li>
+<li><em>If you would like a copy of this information, please use the [fork](https://github.com/TaherCCG/FactFinding/fork) feature on GitHub to get a copy.</em></li>
 </Ul>
 </br>
-</br>
+<em>To learn more about operators and precedence order refer to [Python Documentation](https://www.w3schools.com/python/python_operators.asp"w3schools.com")</em>
 
-    If you would like a copy of this information, please use the [fork](https://github.com/TaherCCG/FactFinding/fork"click here to get a copy") feature on GitHub to get a copy.
+</br>

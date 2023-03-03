@@ -166,10 +166,10 @@ directory (CWD)</em></br>
 </ul>
 </ul>
 </Ul>
-<Ul>
-<li><em>If you would like a copy of this information, please use the [fork](https://github.com/TaherCCG/FactFinding/fork) feature on GitHub to get a copy.</em></li>
-</Ul>
 </br>
-<em>To learn more about operators and precedence order refer to [Python Documentation](https://www.w3schools.com/python/python_operators.asp"w3schools.com")</em>
+<em>If you would like a copy of this information, please use the [fork] feature on GitHub to get a copy.</br>
+ scroll to very top and click fork.</br>
+ Thanks.
+ </em>
 
 </br>

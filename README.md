@@ -172,6 +172,9 @@ directory (CWD)</em></br>
  Thanks.
  </em>
 
+---
+
+</br>
 </br>
 <h1 align="center">Database Fact Finding Exercise</h1>
 
@@ -244,4 +247,108 @@ GROUP BY city
 HAVING COUNT(*) > 100;</code></li>
 </ul>
 <li>The key difference between WHERE and HAVING is that WHERE is used to filter rows before grouping, while HAVING is used to filter groups after grouping. In other words, WHERE is applied to individual rows, while HAVING is applied to groups created by the GROUP BY clause.</li>
+</ul>
+</ol>
+
+---
+
+</br>
+</br>
+<h1 align="center">AWS Cloud Foundations – One Fact Finding exercise</h1>
+
+## Questions
+
+<ol>
+<li><h3>Define what IaaS, PaaS and SaaS is.</h3></li>
+<ul></br>
+<li>IaaS is a cloud service where a cloud service provider (CSP) rents out highly scalable and automated IT infrastructure, usually over the internet, to a small and medium business (SMBs) or individual developers.</li>
+<ul><li> Popular IaaS examples include Amazon EC2, Rackspace, Windows Azure, and Google Compute Engine</li>
+</ul></br>
+<li>PaaS gives you a cloud platform complete with components and working framework upon which you can build custom applications. The required storage, server, network, runtime, middleware, virtualization, and OS is provided for and managed by the vendor while you get to maintain and control your apps and data.</li>
+<ul><li>Common examples of PaaS are AWS Elastic Beanstalk, Google App Engine, and Adobe Commerce</li></ul></br>
+<li>SaaS is the end result, allowing businesses to deliver software on demand to customers. With SaaS, vendors are able to provide software via the internet to users and customers. A connected device and browser are all users need to access and use the software.</li>
+<ul><li>Common examples of SaaS are Gmail, Slack, and Microsoft Office 365</li></ul>
+</ul>
+</br></br>
+<li><h3>Provide 6 advantages of cloud computing.</h3></li>
+<ol></br>
+<li><strong>Trade capital expense (capex) for variable expense:</strong>
+You don’t need to invest in data centres and servers before you know how you will use them. Instead, you can pay only when you use computing resources, and pay for how much you use.
+</li></br>
+<li><strong>Benefit from massive economies of scale:</strong>
+By using cloud computing, you can achieve a lower variable cost than you can get on your own. Because usage from hundreds of thousands of customers is aggregated in the cloud, providers such as AWS can achieve higher economies of scale. These economies translate into lower, pay-as-you-go prices.</li></br>
+<li><strong>Reduce guessing about capacity:</strong>
+You can reduce guessing about your infrastructure capacity needs. When you make a capacity decision before you deploy an application, you often have either expensive idle resources or insufficient capacity. Cloud computing reduces these problems. You can access as many or as few resources as you need, and you can scale up and down as required with only a few minutes’ notice.
+</li></br>
+<li><strong>Increase speed and agility:</strong>
+In a cloud computing environment, new IT resources are only a click away. Thus, you reduce the time that it takes to make those resources available to your developers from weeks to minutes. The result is a dramatic increase in agility for the organization. The cost and time that are needed to experiment and develop are much lower.
+</li></br>
+<li><strong>Stop spending money on running and maintaining data centres:</strong>
+Running and maintaining data centres is expensive and time consuming. Focus on projects that differentiate your business, instead of focusing on the infrastructure. Cloud computing enables you to focus on your customers, instead of focusing on the tasks of racking, stacking, and powering servers.
+</li></br>
+<li><strong>Go global in minutes:</strong>
+You can deploy your application in multiple AWS Regions around the world with a few clicks. As a result, you can provide a lower latency and better experience for your customers simply, and at minimal cost.
+</li>
+</ol>
+</br></br>
+<li><h3>Define what an AWS region and an Availability Zone is.</h3></li>
+<ul></br>
+<li>AWS Region is a separate geographic area. Each AWS Region has multiple, isolated locations known as Availability Zones. For information about finding the Availability Zones for an AWS Region, see Describe your Availability Zones in the Amazon EC2 documentation.</li></br>
+<li>Availability Zones are multiple, isolated locations within each Region. Local Zones provide you the ability to place resources, such as compute and storage, in multiple locations closer to your end users.</li>
+</ul>
+</br></br>
+<li><h3>List all the AWS regions.</h3></li>
+<ol>
+<li>US East (N. Virginia)</li>
+<li>US East (Ohio)</li>
+<li>US West (N. California)</li>
+<li>US West (Oregon)</li>
+<li>Asia Pacific (Hong Kong)</li>
+<li>Asia Pacific (Mumbai)</li>
+<li>Asia Pacific (Osaka-Local)</li>
+<li>Asia Pacific (Seoul)</li>
+<li>Asia Pacific (Singapore)</li>
+<li>Asia Pacific (Sydney)</li>
+<li>Asia Pacific (Tokyo)</li>
+<li>Canada (Central)</li>
+<li>Europe (Frankfurt)</li>
+<li>Europe (Ireland)</li>
+<li>Europe (London)</li>
+<li>Europe (Milan)</li>
+<li>Europe (Paris)</li>
+<li>Europe (Stockholm)</li>
+<li>Middle East (Bahrain)</li>
+<li>South America (São Paulo)</li>
+<li>Africa (Cape Town)</li>
+</ol>
+</br></br>
+<li><h3>What are the categories in which the AWS services are grouped?</h3></li>
+<ul></br>
+<li>Compute: This category includes services that provide computing resources, such as EC2 (Elastic Compute Cloud), ECS (Elastic Container Service), and Lambda.</li></br>
+<li>Storage: This category includes services that provide storage resources, such as S3 (Simple Storage Service), EBS (Elastic Block Store), and Glacier.</li></br>
+<li>Database: This category includes services that provide database resources, such as RDS (Relational Database Service), DynamoDB, and ElastiCache.</li></br>
+<li>Networking: This category includes services that provide networking resources, such as VPC (Virtual Private Cloud), Direct Connect, and Route 53.</li></br>
+<li>Security: This category includes services that provide security resources, such as IAM (Identity and Access Management), KMS (Key Management Service), and WAF (Web Application Firewall).</li></br>
+<li>Analytics: This category includes services that provide analytics resources, such as Redshift, EMR (Elastic MapReduce), and Kinesis.</li></br>
+<li>Machine Learning: This category includes services that provide machine learning resources, such as SageMaker, Rekognition, and Comprehend.</li></br>
+<li>Application Integration: This category includes services that provide application integration resources, such as SQS (Simple Queue Service), SNS (Simple Notification Service), and Step Functions.</li></br>
+<li>Management and Governance: This category includes services that provide management and governance resources, such as CloudFormation, CloudTrail, and Config.</li></br>
+<li>Developer Tools: This category includes services that provide developer tools, such as CodeCommit, CodeBuild, and CodeDeploy</li>
+</ul>
+</br></br>
+<li><h3>What is the difference between object storage and block storage?</h3></li>
+<ul></br>
+<li>Object storage and block storage have different characteristics and are used for different purposes. Object storage is suitable for storing large amounts of unstructured data, while block storage is suitable for high-performance applications that require direct access to data.</li>
+</ul></br></br>
+
+<li><h3>List two AWS compute services and explain them.</h3></li>
+<ul></br>
+<li>Amazon Elastic Compute Cloud (EC2): EC2 is a scalable cloud computing service that provides virtual servers, or instances, in the cloud. EC2 instances can be launched in minutes and can be configured with different types of compute power, memory, storage, and networking capacity to meet different application requirements. EC2 supports a wide range of operating systems and software, allowing you to run almost any application in the cloud. EC2 instances can be managed using the AWS Management Console, command-line tools, or programmatically using APIs.</li></br>
+<li>AWS Lambda: Lambda is a serverless compute service that allows you to run code in the cloud without provisioning or managing servers. With Lambda, you can upload your code and the service will automatically execute it in response to events, such as changes to data in an S3 bucket or a new message in an SQS queue. Lambda supports multiple programming languages, and you only pay for the compute time used to run your code, with no upfront fees or commitments. Lambda can be used for a wide range of applications, such as data processing, web and mobile backends, and IoT (Internet of Things) applications.</li>
+</ul>
+</br></br>
+<li><h3>List two AWS storage services and explain them.</h3></li>
+<ul></br>
+<li>Amazon EBS (Elastic Block Store): EBS is a block storage service that provides persistent block-level storage volumes for use with EC2 instances. EBS volumes are automatically replicated within their availability zone for high availability, and they can be attached to EC2 instances to provide persistent storage for applications, databases, and other workloads. EBS volumes support multiple volume types, including general-purpose SSD, provisioned IOPS SSD, and magnetic, allowing you to choose the right storage type for your workload. EBS volumes also provide features such as snapshots, encryption, and multi-attach to help you protect and manage your data.</li></br>
+<li>Amazon S3 (Simple Storage Service): S3 is a scalable and durable object storage service that allows you to store and retrieve any amount of data from anywhere on the web. S3 is designed for 99.999999999% (11 9's) durability, and it stores data across multiple availability zones for high availability and data durability. S3 supports a wide range of storage classes, including standard, standard-infrequent access, and Glacier for archival storage. S3 also provides a powerful set of features, such as versioning, lifecycle policies, cross-region replication, and access control to help you manage your data securely and cost-effectively.</li>
 </ul>

@@ -2,7 +2,7 @@
 <p>AWSre/StartProjects - Fact Finding Exercise: Allow learners to work on the self-paced exercise for the allotted time.</p>
 
 
-<h1 align="center">Python fact finding exercise</h1>
+<h1 align="center">Python Fact Finding exercise</h1>
 
 ## Questions
 
@@ -173,3 +173,75 @@ directory (CWD)</em></br>
  </em>
 
 </br>
+<h1 align="center">Database Fact Finding Exercise</h1>
+
+## Questions
+
+<ol>
+<li><h3>What is the difference between a relational and a non-relational database?</h3></li>
+<ul>
+<li>A relational database stores data in tables, which consist of rows and columns. Each table represents a specific entity, such as a customer, product, or order. The data in each table is structured and organized based on predefined relationships between the tables. These relationships are typically established using primary keys and foreign keys. Relational databases use SQL (Structured Query Language) for querying and manipulating data.</li>
+<li>A non-relational database (also called a NoSQL database) stores data in a flexible and unstructured way. Instead of tables, data is stored in collections or documents. Collections or documents can be thought of as containers for storing related data. Each document can have a different structure, and the relationships between documents are typically more flexible and dynamic than in a relational database. Non-relational databases often use non-SQL query languages, such as MongoDB's query language.</li>
+</ul>
+<li><h3>What are indexes?</h3></li>
+<ul>
+<li>Indexes are data structures that improve the speed of data retrieval operations on a database table. An index is created on one or more columns of a table, and it stores a sorted copy of the values in those columns.</li>
+</ul>
+<li><h3>What are primary keys and secondary keys?</h3></li>
+<ul>
+<li>In database design, a primary key is a unique identifier for each row in a table. The primary key serves as a reference point for related tables, and it ensures that each row in the table can be identified and accessed quickly and efficiently</li>
+<li>A secondary key, also known as a non-primary key, is any column or set of columns in a table that is indexed for faster data retrieval. Unlike the primary key, a secondary key does not necessarily have to be unique. Secondary keys are used to speed up queries that involve searching, sorting, or grouping on specific columns.</li>
+<ul><li>For example, in a table of customers, the primary key might be the customer ID column, which has a unique value for each customer. The table might also have a secondary key on the customer name column, which would allow queries to retrieve all customers with a specific name quickly and efficiently</li>
+</ul>
+</ul>
+<li><h3>What are inner joins and outer joins?</h3></li>
+<ul>
+<li>In SQL, a join operation is used to combine rows from two or more tables based on a related column between them. The two most common types of join operations are inner joins and outer joins.</li>
+<li>An inner join returns only the rows that have matching values in both tables being joined. The result set includes only the rows where the join condition is true. Inner joins can be expressed using the JOIN keyword or by simply listing the tables and using the WHERE clause to specify the join condition.</li>
+<ul><li>For example, suppose we have two tables, Customers and Orders, with a common column of CustomerID. An inner join between the two tables would return only the rows where the CustomerID value appears in both tables:</li>
+<code>SELECT *
+FROM Customers
+JOIN Orders
+ON Customers.CustomerID = Orders.CustomerID;</code>
+<li>An outer join, on the other hand, returns not only the matching rows but also the non-matching rows from one or both of the tables being joined. There are three types of outer joins: left outer join, right outer join, and full outer join.</li>
+</ul>
+</ul>
+<li><h3>What is the difference between DROP TABLE and TRUNCATE TABLE?</h3></li>
+<ul>
+<li>In SQL, both the DROP TABLE and TRUNCATE TABLE commands are used to remove all data from a table. However, they differ in how they accomplish this task and the effects they have on the table and its related objects.</li>
+<li>DROP TABLE is a DDL (Data Definition Language) command that permanently removes a table and all its related objects, including indexes, constraints, triggers, and permissions. Once a table is dropped, all data and metadata associated with the table are deleted from the database. The DROP TABLE command cannot be rolled back, so it should be used with caution.</li>
+<li>TRUNCATE TABLE, on the other hand, is a DML (Data Manipulation Language) command that removes all rows from a table but keeps the table structure and its related objects intact. TRUNCATE TABLE resets the identity value of any auto-increment columns and releases the storage space allocated to the table. TRUNCATE TABLE is faster than DELETE because it does not log individual row deletions.</li>
+
+</ul>
+
+<li><h3>What are the different data types in SQL?</h3></li>
+<ul>
+<li>In SQL, data types are used to define the type of data that can be stored in a database column. The most common data types in SQL are:</li>
+<ul>
+<li>Numeric data types</li>
+<li>Character data type</li>
+<li>Date and time data types</li>
+<li>Boolean data type</li>
+<li>Binary data types</li>
+</ul>
+</ul>
+
+<li><h3>Explain the WHERE and HAVING clauses.</h3></li>
+<ul>
+<li>In SQL, the WHERE and HAVING clauses are used to filter data in a query, but they are used in different contexts.</li>
+<li>The WHERE clause is used to filter rows in a query based on one or more conditions. It is used with the SELECT, UPDATE, and DELETE statements. The WHERE clause can be used to specify conditions that involve comparison operators eg: <code>=, <>, >, <, >=, <= </code>and logical operators eg: <code>AND, OR, NOT</code> For example:</li>
+<ul>
+<li><code>SELECT *
+FROM customers
+WHERE age > 30 AND city = 'New York';</code></li>
+
+</ul>
+<li>The HAVING clause is used to filter groups in a query based on one or more conditions. It is used with the SELECT statement when using aggregate functions e.g:<code> COUNT, SUM, AVG, MAX, MIN</code> to group data. The HAVING clause can be used to specify conditions that involve comparison operators and logical operators, just like the WHERE clause. For example:</li>
+<ul>
+<li><code>SELECT city, COUNT(*)
+FROM customers
+GROUP BY city
+HAVING COUNT(*) > 100;</code></li>
+</ul>
+<li>The key difference between WHERE and HAVING is that WHERE is used to filter rows before grouping, while HAVING is used to filter groups after grouping. In other words, WHERE is applied to individual rows, while HAVING is applied to groups created by the GROUP BY clause.</li>
+</ul>

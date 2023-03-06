@@ -165,9 +165,9 @@ directory (CWD)</em></br>
 <li>"^"	<em>is named "XOR"</em>	Sets each bit to 1 if only one of two bits is 1</li>
 </ul>
 </ul>
-</Ul>
+</ol>
 </br>
-<em>If you would like a copy of this information, please use the [fork] feature on GitHub to get a copy.</br>
+<em>If you would like a copy of this information, please use the [fork] feature on GitHub to get a copy.
  scroll to very top and click fork.</br>
  Thanks.
  </em>

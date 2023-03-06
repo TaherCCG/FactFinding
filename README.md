@@ -513,7 +513,7 @@ and capacity planning.</li>
 
 <li><h3>What are the different approaches to using AWS resources in a cost-effective manner?</h3></li>
 <ul>
-<li>Right-sizing: Use the appropriate size of resources, such as instances and storage, based on the workload requirements. Avoid overprovisioning resources, which can result in unnecessary costs.</li>
+<li>Right-sizing: Use the appropriate size of resources, such as instances and storage, based on the workload requirements. Avoid over provisioning resources, which can result in unnecessary costs.</li>
 <li>Reserved instances: Purchase reserved instances to reduce costs over time. This involves paying upfront for a period of one or three years, and receiving a discount on the hourly usage rate.</li>
 <li>Spot instances: Use spot instances to take advantage of unused EC2 capacity, which is available at a significantly lower price than on-demand instances. However, spot instances can be interrupted
 at any time if the demand for capacity increases.</li>

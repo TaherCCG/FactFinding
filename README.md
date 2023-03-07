@@ -353,6 +353,7 @@ You can deploy your application in multiple AWS Regions around the world with a 
 <li>Amazon S3 (Simple Storage Service): S3 is a scalable and durable object storage service that allows you to store and retrieve any amount of data from anywhere on the web. S3 is designed for 99.999999999% (11 9's) durability, and it stores data across multiple availability zones for high availability and data durability. S3 supports a wide range of storage classes, including standard, standard-infrequent access, and Glacier for archival storage. S3 also provides a powerful set of features, such as versioning, lifecycle policies, cross-region replication, and access control to help you manage your data securely and cost-effectively.</li>
 </ul>
 </ol>
+
 ---
 
 </br>
@@ -526,3 +527,88 @@ at any time if the demand for capacity increases.</li>
 
 </ol>
 </br>
+
+
+---
+
+</br>
+</br>
+<h1 align="center">AWS CloudFormation – Fact Finding exercise</h1>
+
+## Questions
+<ol>
+<li><h3>What is Configuration Orchestration?</h3></li>
+<ul>
+<li>Configuration orchestration is the process of managing the configuration of multiple systems or components in a coordinated and automated manner.
+It involves defining the desired state of the system or components, and using tools and automation to ensure that the actual state matches the desired state.</li>
+</ul>
+</br>
+
+<li><h3>What is Configuration Management? List some commonly used tools for
+Configuration Management?</h3></li>
+<ul>
+<li>Configuration management is the process of managing the configuration of software, systems, and infrastructure in a controlled and systematic way.</li>
+<li>It involves identifying and tracking configuration items (CIs), defining their relationships and dependencies, and managing changes to CIs over time.</li>
+<li>The goal of configuration management is to ensure that systems are configured correctly and consistently, and that changes to configurations are made in a controlled and auditable manner</li>
+
+</ul>
+</br>
+
+
+<li><h3>What is Continuous Integration?</h3></li>
+<ul>
+<li>Continuous Integration (CI) is a software development practice where developers frequently merge their code changes into a shared repository, and each merge is automatically built and tested. </li>
+<li>The goal of CI is to detect and address issues early in the development cycle, rather than waiting until later stages of the development process.</li>
+</ul>
+</br>
+
+
+<li><h3>What is Continuous delivery?</h3></li>
+<ul>
+<li>Continuous Delivery (CD) is a software development practice where code changes are automatically built, tested, and deployed to production environments in a streamlined and repeatable way.</li>
+<li>The goal of CD is to ensure that code changes are reliably and consistently delivered to users as quickly and efficiently as possible, while minimizing the risk of errors or downtime.</li>
+</ul>
+</br>
+
+
+<li><h3>What is AWS CloudFormation? List 3 advantages of Cloud Formation.</h3></li>
+<ul>
+<li>AWS CloudFormation is a service that allows you to define and deploy infrastructure as code using templates. With CloudFormation, you can define your infrastructure in a declarative way using a JSON or YAML template file, and then deploy that infrastructure in a repeatable and automated manner.</li>
+<li>Here are three advantages of using AWS CloudFormation:</li>
+<ul>
+<li>Infrastructure as Code: CloudFormation allows you to define your infrastructure as code, which means you can manage your infrastructure in the same way that you manage your application code. This makes it easier to manage and maintain your infrastructure, and reduces the risk of configuration drift or human error.</li>
+<li>Automated Deployment: CloudFormation provides a way to automate the deployment of your infrastructure, which helps to reduce the time and effort required to deploy and manage your resources. You can create CloudFormation stacks that include multiple resources, such as EC2 instances, RDS databases, and Elastic Load Balancers, and then deploy those stacks in a single operation.</li>
+<li>Repeatable and Consistent: CloudFormation ensures that your infrastructure is deployed in a repeatable and consistent manner, which helps to reduce the risk of errors or inconsistencies. You can use CloudFormation templates to define your infrastructure once, and then deploy that infrastructure to multiple environments, such as development, staging, and production, with confidence that it will be deployed consistently and reliably.</li>
+</ul>
+<li>Overall, AWS CloudFormation is a powerful tool for managing infrastructure in the cloud, and can help organizations to reduce complexity, increase automation, and improve consistency and reliability of infrastructure deployments.</li>
+</ul>
+</br>
+
+
+<li><h3>What is JSON and YAML? List out 3 differences between them.</h3></li>
+<ul>
+<li>JSON and YAML are two popular data serialization formats used for exchanging data between applications, and for defining infrastructure as code in tools like AWS CloudFormation.</li>
+<li>Here are three differences between JSON and YAML:</li>
+<ul>
+<li>Syntax: JSON uses a more rigid syntax, with data represented as key-value pairs separated by commas and enclosed in curly braces, while YAML uses a more flexible syntax that allows for lists, maps, and nested data structures. YAML uses indentation to define the structure of the data, whereas JSON uses explicit punctuation.</li>
+<li>Readability: YAML is generally considered more human-readable than JSON, due to its use of whitespace and indentation to define the structure of the data. YAML is also more concise, as it requires fewer characters to define the same data structure as JSON.</li>
+<li>Extensibility: JSON has a more established ecosystem of libraries and tools for working with data, as it has been widely used for many years. However, YAML has been gaining popularity in recent years, and is supported by many modern programming languages and tools. YAML also allows for more extensibility, as it supports comments and can include external data sources, whereas JSON does not.</li>
+</ul>
+<li>Overall, both JSON and YAML are useful serialization formats, and the choice of which one to use will depend on the specific use case and the requirements of the application or tool.</li>
+</ul>
+</br>
+
+
+<li><h3>What is a stack in AWS CloudFormation?</h3></li>
+<ul>
+<li>In AWS CloudFormation, a stack is a collection of AWS resources that are created and managed together as a single unit. A stack is defined by a CloudFormation template, which specifies the resources to be created, their configuration settings, and their dependencies on other resources.</li>
+
+</ul>
+</br>
+
+
+
+
+
+</ol>
+
